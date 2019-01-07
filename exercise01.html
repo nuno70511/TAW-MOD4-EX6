@@ -14,5 +14,28 @@
       <li>Age: <span id="age">25</span></li>
       <li>Hometown: <span id="hometown">Paris</span></li>
     </ul>
+
+    <script>
+      document.getElementById("nickname").innerHTML = "John Doe";
+      document.getElementById("age").innerHTML = "30";
+      document.getElementById("hometown").innerHTML = "Londres";
+
+
+      let li = document.getElementsByTagName("li");
+      for (let i = 0; i < li.length; i++){
+        li[i].classList.add("listitem");
+      }
+      
+      let items = document.getElementsByClassName("listitem");
+      for (let i = 0; i < items.length; i++){
+        items[i].style.color = "red";
+      }
+
+
+      let img = document.createElement("img");
+      img.src = "http://placekitten.com/200/300";
+      document.body.appendChild(img);
+      
+    </script>
   </body>
 </html>
