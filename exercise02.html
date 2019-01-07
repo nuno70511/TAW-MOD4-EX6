@@ -21,6 +21,13 @@
           alreadyRead: true
         }
       ];
+
+      for (let i = 0; i < books.length; i++){
+        let p = document.createElement("p");
+        let text = document.createTextNode(books[i].title + " by " + books[i].author);
+        p.appendChild(text);
+        document.body.appendChild(p);
+      }
     </script>
   </body>
 </html>
